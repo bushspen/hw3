@@ -1,0 +1,13 @@
+<h1>Mexico City</h1>
+
+<% posts = Post.all %>
+
+<p>There are <%= posts.count %> posts</p>
+
+<ul>
+  <% for post in posts %>
+    <li><%= post["title"] %></li>
+  <% end %>
+</ul>
+
+<a href="/posts/new">New Post</a>
